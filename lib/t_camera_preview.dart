@@ -54,24 +54,7 @@ class _TCameraPreviewState extends State<TCameraPreview>{
     if (_camera_controller == null || !_camera_controller.value.isInitialized) {
       return Container(width: 100, height: 100);
     }
-    // return Text('????');
-    return CameraPreview(_camera_controller);
 
-    // return Stack(
-    // 	children: <Widget>[
-    // 		AspectRatio(
-    // 			aspectRatio: _cameraController.value.aspectRatio,
-    // 			child: CameraPreview(_cameraController)
-    // 		),
-    // 		Align(
-    // 			alignment: Alignment.topRight,
-    // 			child: Container(
-    // 				color: _detected ? Colors.green : Colors.pink,
-    // 				height: 50.0,
-    // 				width: 50.0,
-    // 			),
-    // 		)
-    // 	]
-    // );
+    return CameraPreview(_camera_controller);
   }
 }
